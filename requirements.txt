@@ -1,2 +1,10 @@
 seaborn
 altair
+datetime
+pandaparallel
+requests
+BeautifulSoup
+BytesIO
+scipy
+networkx
+matplotlib.pyplot
