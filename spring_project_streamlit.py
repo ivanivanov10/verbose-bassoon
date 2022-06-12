@@ -131,7 +131,7 @@ with stream.echo(code_location='below'):
 
         'Вернемся к полноценному анализу данных, для этого перейдем обратно на полный датасет.'
 
-        train_df = pd.read_csv('../../Desktop/train.csv')
+        train_df = pd.read_csv('train.csv')
         train_df['store_and_fwd_flag'] = train_df['store_and_fwd_flag'].replace({0: False, 1: True})
         train_df['pickup_datetime'] = pd.to_datetime(train_df['pickup_datetime'])
         train_df['dropoff_datetime'] = pd.to_datetime(train_df['dropoff_datetime'])
