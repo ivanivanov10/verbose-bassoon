@@ -261,7 +261,7 @@ with stream.echo(code_location='below'):
 
         'Исследуем данные подробнее.'
 
-        'Построим взаимные распределения параметро
+        'Построим взаимные распределения параметров.'
 
         my_data=taxi_df.head(1000)
         fig = sns.pairplot(my_data,
