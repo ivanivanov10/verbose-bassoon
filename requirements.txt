@@ -8,3 +8,16 @@ BytesIO
 scipy
 networkx
 matplotlib.pyplot
+tqdm
+requests
+itertools
+copy
+random
+warnings
+geopandas
+networkx
+sklearn.preprocessing
+sklearn.model_selection
+sklearn.linear_model
+sklearn.ensemble
+sklearn.metrics
