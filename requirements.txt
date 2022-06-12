@@ -3,8 +3,6 @@ altair
 datetime
 pandarallel
 requests
-BeautifulSoup
-BytesIO
 scipy
 networkx
 matplotlib.pyplot
