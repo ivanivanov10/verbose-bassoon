@@ -8,8 +8,6 @@ networkx
 matplotlib
 tqdm
 requests
-copy
-random
 warnings
 geopandas
 networkx
