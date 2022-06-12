@@ -10,8 +10,4 @@ tqdm
 requests
 geopandas
 networkx
-sklearn.preprocessing
-sklearn.model_selection
-sklearn.linear_model
-sklearn.ensemble
-sklearn.metrics
+sklearn
