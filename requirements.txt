@@ -5,7 +5,7 @@ pandarallel
 requests
 scipy
 networkx
-matplotlib.pyplot
+matplotlib
 tqdm
 requests
 itertools
