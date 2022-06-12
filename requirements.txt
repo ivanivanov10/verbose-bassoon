@@ -8,7 +8,6 @@ networkx
 matplotlib
 tqdm
 requests
-warnings
 geopandas
 networkx
 sklearn.preprocessing
