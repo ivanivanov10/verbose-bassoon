@@ -315,7 +315,7 @@ with stream.echo(code_location='below'):
         
         print_time_graph(taxi_df, "pickup_datetime_weekday")
         
-        'Ожидаемо на выходных ездят меньше.'
+        'Ожидаемо, на выходных ездят меньше.'
 
         'Построим график зависимости количества пользователей от даты.'
 
