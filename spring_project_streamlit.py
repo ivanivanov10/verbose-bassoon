@@ -305,25 +305,22 @@ with stream.echo(code_location='below'):
 
         'Построим график зависмости количества пользователей от часа.'
         
-        time1=print_time_graph(taxi_df, "pickup_datetime_hour")
-        
-        stream.pyplot(time1)
+        print_time_graph(taxi_df, "pickup_datetime_hour")
+
 
         'Видим, что конец и начало графика почти совпадают. Ночью никто не ездит, утром все едут на работу, а вечером после 17 - едут домой.'
 
         'Построим график зависмости количества пользователей от дня недели.'
         
-        time2=print_time_graph(taxi_df, "pickup_datetime_weekday")
+        print_time_graph(taxi_df, "pickup_datetime_weekday")
         
-        stream.pyplot(time2)
 
         'Ожидаемо на выходных ездят меньше.'
 
         'Построим график зависимости количества пользователей от даты.'
 
-        time3=print_time_graph(taxi_df, "pickup_datetime_date")
+        print_time_graph(taxi_df, "pickup_datetime_date")
         
-        stream.pyplot(time3)
 
         'Видим ярко выраженную цикличность с просадками на выходных.'
        
