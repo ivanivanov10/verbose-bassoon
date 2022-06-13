@@ -295,31 +295,31 @@ with stream.echo(code_location='below'):
 
         def print_time_graph(data, delta):
             vendor_agg = data.groupby(['vendor_id', delta]).agg(trip_count=('passenger_count', 'count')).reset_index()
-            plt.figure(figsize=(15, 5))
+            fig=plt.figure(figsize=(15, 5))
             sns.lineplot(data=vendor_agg, x=delta, y='trip_count', hue="vendor_id")
             plt.xticks(rotation=80, fontsize=11)
             plt.title('Зависимость количества клиентов от даты и времени', fontsize=13)
             plt.ylabel('Количество клиентов', fontsize=13)
             plt.xlabel(time_dict[delta], fontsize=13)
             plt.legend(title="Вендор");
-
+            stream.pyplot(fig)
+            
         'Построим график зависмости количества пользователей от часа.'
         
-        time1=print_time_graph(taxi_df, "pickup_datetime_hour")
-
-
+        print_time_graph(taxi_df, "pickup_datetime_hour")
+        
+        
         'Видим, что конец и начало графика почти совпадают. Ночью никто не ездит, утром все едут на работу, а вечером после 17 - едут домой.'
 
         'Построим график зависмости количества пользователей от дня недели.'
         
-        time2=print_time_graph(taxi_df, "pickup_datetime_weekday")
+        print_time_graph(taxi_df, "pickup_datetime_weekday")
         
-
         'Ожидаемо на выходных ездят меньше.'
 
         'Построим график зависимости количества пользователей от даты.'
 
-        time3=print_time_graph(taxi_df, "pickup_datetime_date")
+        print_time_graph(taxi_df, "pickup_datetime_date")
         
 
         'Видим ярко выраженную цикличность с просадками на выходных.'
