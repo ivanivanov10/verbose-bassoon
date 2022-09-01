@@ -12,7 +12,7 @@ with stream.echo(code_location='below'):
     import datetime as dt
     from pandarallel import pandarallel
     from tqdm import tqdm
-    from bs4 import BeautifulSoup
+   
     from io import BytesIO
     import requests
     from itertools import repeat
